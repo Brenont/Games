@@ -1,6 +1,7 @@
 function addBola(){
-    var bola = document.createElement("div");
-    bola.setAttribute("class", "bola");
+    var bola = document.createElement("img");
+    bola.setAttribute("src", "Baloon.png");
+    bola.setAttribute("class", "bola")
 
     var p1 = Math.floor(Math.random() * 1300);
     var p2 = Math.floor(Math.random() * 500);
