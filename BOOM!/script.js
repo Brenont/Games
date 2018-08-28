@@ -3,9 +3,9 @@ function addBola(){
     bola.setAttribute("src", "Baloon.png");
     bola.setAttribute("class", "bola")
 
-    var p1 = Math.floor(Math.random() * 1300);
-    var p2 = Math.floor(Math.random() * 500);
-    bola.setAttribute("style", "left:"+p1+"px;top:"+p2+"px;");
+    var p1 = Math.floor(Math.random() * 93);
+    var p2 = Math.floor(Math.random() * 83);
+    bola.setAttribute("style", "left:"+p1+"vw;top:"+p2+"vh;");
     bola.setAttribute("onclick", "estourar(this)");
 
     document.body.appendChild(bola);
