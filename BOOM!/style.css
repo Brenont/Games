@@ -6,6 +6,11 @@
     src: url("COMFORTAA.BOLD.TTF");
     font-family: Comfortaa;
 }
+@keyframes btt-pulse {
+    0% {width: 220px;height: 60px;}
+    50% {width:225px;height: 65px;}
+    100% {width: 220px;height: 60px;}
+}
 body{
     background-color: #57559e;
     font-family: Comfortaa;
@@ -19,16 +24,18 @@ nav{
     padding: 20px 0px;
     flex-direction: column;
 }
-.div-button{
+#div-button{
     padding-top: 150px; 
 }
 button{
     font-size: 17px;
-    padding: 18px;
+    width: 220px;
+    height: 60px;
     border-radius: 30px;
     border: solid;
     background: #CFDE00;
     font-family: Comfortaa;
+    animation: btt-pulse 1s infinite;
 }
 .bola{
     width: 93px;

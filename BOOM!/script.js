@@ -1,7 +1,7 @@
 function addBola(){
     var bola = document.createElement("img");
     bola.setAttribute("src", "Baloon.png");
-    bola.setAttribute("class", "bola")
+    bola.setAttribute("class", "bola");
 
     var p1 = Math.floor(Math.random() * 93);
     var p2 = Math.floor(Math.random() * 83);
@@ -15,6 +15,7 @@ function estourar(elemento){
     var audio = new Audio("estourar.mpeg");
     audio.play();
 }
-function iniciar(){
-    setInterval(addBola, 1500)
+function iniciar(button){
+    setInterval(addBola, 1500);
+    document.getElementById("div-button").removeChild(button);
 }
